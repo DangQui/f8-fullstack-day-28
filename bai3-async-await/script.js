@@ -213,6 +213,7 @@ async function handleShowComments(e) {
             <div class="comment-email">${comment.email}/div>
             <div class="comment-body">${comment.body}</div>
         `;
+      commentsContainer.appendChild(commentElement);
     });
   } catch (error) {
     commentsContainer.innerHTML = `<p>Lỗi: ${
